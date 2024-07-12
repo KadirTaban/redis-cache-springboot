@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pg-data/:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: example
+  redis:
+      image: redis:latest
+      ports:
+        - 6379:6379

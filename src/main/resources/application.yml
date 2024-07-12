@@ -1,0 +1,19 @@
+spring:
+  data:
+      redis:
+        repositories:
+          enabled: false
+        port: 6379
+        host: localhost
+        time-to-live: 60000
+
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: example
+#    password: example
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
